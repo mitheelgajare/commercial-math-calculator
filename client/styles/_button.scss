@@ -1,0 +1,18 @@
+.button {
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid $primary-color;
+  color: $primary-color;
+  font-size: 1.5rem;
+  border-radius: 2.5rem;
+  margin: 1rem;
+  transition-property: all;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: white;
+    background: $primary-color;
+    font-size: 3rem;
+  }
+}

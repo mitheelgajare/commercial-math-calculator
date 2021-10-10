@@ -3,4 +3,50 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.button {
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid #4287f5;
+  color: #4287f5;
+  font-size: 1.5rem;
+  border-radius: 2.5rem;
+  margin: 1rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.button:hover {
+  color: white;
+  background: #4287f5;
+  font-size: 3rem;
+}
+
+.footer {
+  text-align: center;
+  color: gray;
+}
+
+.navbar {
+  background: #4287f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar a {
+  margin: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=App.css.map */

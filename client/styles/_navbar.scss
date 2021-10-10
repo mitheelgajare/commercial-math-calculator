@@ -1,0 +1,13 @@
+.navbar {
+  background: $primary-color;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  a {
+    margin: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+  }
+}
