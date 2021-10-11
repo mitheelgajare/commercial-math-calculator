@@ -35,9 +35,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -48,5 +48,67 @@ body {
   font-size: 2rem;
   text-decoration: none;
   color: white;
+}
+
+.index-page {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-auto-rows: minmax(10vh, auto);
+}
+
+.index-page .common {
+  background: #f2f2f2;
+  border: 3px solid #4287f5;
+  margin: 1rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 0.313rem #4287f5;
+          box-shadow: 0 0 0.313rem #4287f5;
+  text-align: center;
+}
+
+.index-page .common h2 {
+  color: #4287f5;
+  font-size: 3rem;
+}
+
+.index-page .common input {
+  font-family: "Pacifico", cursive;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #4287f5;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #4287f5;
+}
+
+.index-page .common input::-webkit-input-placeholder {
+  font-family: "Pacifico", cursive;
+  color: #4287f5;
+}
+
+.index-page .common input:-ms-input-placeholder {
+  font-family: "Pacifico", cursive;
+  color: #4287f5;
+}
+
+.index-page .common input::-ms-input-placeholder {
+  font-family: "Pacifico", cursive;
+  color: #4287f5;
+}
+
+.index-page .common input::placeholder {
+  font-family: "Pacifico", cursive;
+  color: #4287f5;
+}
+
+.index-page .common .output {
+  color: #4287f5;
+  max-width: 25vw;
+  margin: 1rem auto;
+  border: 3px solid #4287f5;
 }
 /*# sourceMappingURL=App.css.map */
