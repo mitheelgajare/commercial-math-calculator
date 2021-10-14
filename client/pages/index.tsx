@@ -21,22 +21,48 @@ const Index: NextPage = () => {
   useEffect(() => {
     if (costPrice && sellingPrice) {
       setProfitOrLoss(sellingPrice - costPrice);
-
-      // if (profitOrLoss >= 0) {
-      //   console.log(profitOrLoss);
-
-      //   setProfitOrLossPercent((profitOrLoss / costPrice) * 100);
-      // } else {
-      //   setProfitOrLossPercent(((profitOrLoss * -1) / costPrice) * 100);
-      // }
     } else {
       setProfitOrLoss(0);
       setProfitOrLossPercent(0);
     }
   }, [costPrice, sellingPrice]);
 
+  useEffect(() => {
+    if (!profitOrLoss) {
+      setProfitOrLossPercent(0);
+      return;
+    }
+
+    if (profitOrLoss >= 0) {
+      setProfitOrLossPercent((profitOrLoss / costPrice) * 100);
+    } else {
+      setProfitOrLossPercent(((profitOrLoss * -1) / costPrice) * 100);
+    }
+  }, [profitOrLoss]);
+
+  useEffect(() => {
+    if (!(markedPrice && discount)) {
+      setDiscountPercent(0);
+      setPriceAfterDiscount(0);
+      return;
+    }
+
+    setDiscountPercent((discount / markedPrice) * 100);
+    setPriceAfterDiscount(markedPrice - discount);
+  }, [markedPrice, discount]);
+
+  // ===============================================
+
+  // useEffect(() => {
+  //   if (!priceAfterDiscount) {
+  //     return;
+  //   }
+  // }, [discountPercent]);
+
   return (
     <div className="index-page">
+      {/* Part Two */}
+
       <div className="profit-loss common">
         <h2>Profit and Loss</h2>
         <form action="">
@@ -70,8 +96,33 @@ const Index: NextPage = () => {
           </div>
         </form>
       </div>
+
+      {/* Part Two */}
+
       <div className="discount common">
         <h2>Discount %</h2>
+
+        <form action="">
+          <input
+            type="number"
+            placeholder="Marked Price ( MP )"
+            required
+            value={markedPrice}
+            onChange={e => setMarkedPrice(parseFloat(e.target.value))}
+          />
+          <br />
+          <input
+            type="number"
+            placeholder="Discount"
+            required
+            value={discount}
+            onChange={e => setDiscount(parseFloat(e.target.value))}
+          />
+          <div className="output">
+            <span>Discount %: {discountPercent}</span> <br />
+            <span>Price After Discount: {priceAfterDiscount}</span>
+          </div>
+        </form>
       </div>
       <div className="gst common">
         <h2>Taxes ( GST )</h2>
