@@ -7,7 +7,7 @@ You will be able to perform every* calculation, be it simple or complex on this 
 *Every calculation means all commercial calculations such as profit, loss, p%, l%, discount, mp etc.*
 
 
-### Link: This website is under development, so no link now
+### Link: https://commercialmathcalculator.netlify.app/
 
 ### License: MIT
 
