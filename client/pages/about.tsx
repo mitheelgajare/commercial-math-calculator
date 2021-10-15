@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { NextPage } from "next";
+import Head from "next/head";
 
 const About: NextPage = () => {
   return (
     <div className="about-page">
+      <Head>
+        <title>CMC - About</title>
+      </Head>
       <h1 className="title">About Us</h1>
       <div className="wrapper">
         <h2>Commercial Math Calculator ( CMC )</h2>

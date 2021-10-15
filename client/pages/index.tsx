@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import type { NextPage } from "next";
+import Head from "next/head";
 
 const Index: NextPage = () => {
   // variables
@@ -53,7 +54,6 @@ const Index: NextPage = () => {
 
   useEffect(() => {
     if (!(gstPercent && priceAfterDiscount)) {
-      setGstPercent(0);
       return;
     }
 
@@ -65,6 +65,9 @@ const Index: NextPage = () => {
   return (
     <div className="index-page">
       {/* Part Two */}
+      <Head>
+        <title>CMC - Home</title>
+      </Head>
 
       <div className="profit-loss common">
         <h2>Profit and Loss</h2>

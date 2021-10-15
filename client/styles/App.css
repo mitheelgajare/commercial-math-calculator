@@ -67,6 +67,7 @@ body {
   -webkit-box-shadow: 0 0 0.313rem #4287f5;
           box-shadow: 0 0 0.313rem #4287f5;
   text-align: center;
+  background: #fff;
 }
 
 .index-page .common h2 {
