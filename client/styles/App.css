@@ -57,10 +57,10 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-auto-rows: minmax(10vh, auto);
+  background: #f2f2f2;
 }
 
 .index-page .common {
-  background: #f2f2f2;
   border: 3px solid #4287f5;
   margin: 1rem 0;
   padding: 1rem;
@@ -110,5 +110,25 @@ body {
   max-width: 25vw;
   margin: 1rem auto;
   border: 3px solid #4287f5;
+}
+
+.about-page {
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 3rem;
+}
+
+.about-page .wrapper {
+  border: 4px solid #4287f5;
+  width: 90vw;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.about-page .wrapper p {
+  max-width: 50rem;
+  margin: auto;
 }
 /*# sourceMappingURL=App.css.map */

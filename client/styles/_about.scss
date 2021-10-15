@@ -1,0 +1,19 @@
+.about-page {
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .wrapper {
+    border: 4px solid $primary-color;
+    width: 90vw;
+    margin: 1rem auto;
+    padding: 1rem;
+
+    p {
+      max-width: 50rem;
+      margin: auto;
+    }
+  }
+}
