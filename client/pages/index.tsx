@@ -51,13 +51,16 @@ const Index: NextPage = () => {
     setPriceAfterDiscount(markedPrice - discount);
   }, [markedPrice, discount]);
 
-  // ===============================================
+  useEffect(() => {
+    if (!(gstPercent && priceAfterDiscount)) {
+      setGstPercent(0);
+      return;
+    }
 
-  // useEffect(() => {
-  //   if (!priceAfterDiscount) {
-  //     return;
-  //   }
-  // }, [discountPercent]);
+    let GST: number = (gstPercent / 100) * priceAfterDiscount;
+    setGst(GST);
+    setPriceAfterGst(priceAfterDiscount + GST);
+  }, [gstPercent, priceAfterDiscount]);
 
   return (
     <div className="index-page">
@@ -126,6 +129,27 @@ const Index: NextPage = () => {
       </div>
       <div className="gst common">
         <h2>Taxes ( GST )</h2>
+        <form action="">
+          <input
+            type="number"
+            required
+            placeholder="Price after discount"
+            value={priceAfterDiscount}
+            onChange={e => setPriceAfterDiscount(parseFloat(e.target.value))}
+          />
+          <br />
+          <input
+            type="number"
+            required
+            placeholder="GST / Tax Percent"
+            value={gstPercent}
+            onChange={e => setGstPercent(parseFloat(e.target.value))}
+          />
+          <div className="output">
+            <span>GST: {gst}</span> <br />
+            <span>Price After GST: {priceAfterGst}</span>
+          </div>
+        </form>
       </div>
     </div>
   );
