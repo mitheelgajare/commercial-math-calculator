@@ -20,7 +20,12 @@ const About: NextPage = () => {
         <br />
         <p>
           This is an open source app written in NextJS and Sass. <br />
-          License: MIT
+          License: MIT <br />
+          Click{" "}
+          <a href="https://github.com/mitheelgajare/commercial-math-calculator">
+            here
+          </a>{" "}
+          for Github repository:
         </p>
       </div>
     </div>
