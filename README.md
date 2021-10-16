@@ -7,8 +7,7 @@ You will be able to perform every* calculation, be it simple or complex on this 
 *Every calculation means all commercial calculations such as profit, loss, p%, l%, discount, mp etc.*
 
 
-### Link: https://commercialmathcalculator.netlify.app/
+[Link to Website](https://commercialmathcalculator.netlify.app/)
 
-### License: MIT
+**License: MIT**
 
-### PS: I am new to Github, so I don't know how to write contribting.md files.
