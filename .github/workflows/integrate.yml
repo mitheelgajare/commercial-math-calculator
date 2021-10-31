@@ -1,8 +1,7 @@
 name: Continuous Integration
 
 on:
-  pull_request:
-    branches: [master]
+  [pull_request]
 
 jobs:
   check_pull_request:
@@ -16,5 +15,3 @@ jobs:
         working-directory: ./client
         run: npm ci
         run: npm run build
-      - 
-      - 
