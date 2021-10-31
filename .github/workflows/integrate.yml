@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: cd client
-      - run: npm ci
-      - run: npm run build
+      - name: Install dependencies
+        working-directory: ./client
+        run: npm ci
+        run: npm run build
+      - 
+      - 
