@@ -15,5 +15,5 @@ jobs:
       - name: Install dependencies
         run: |
           cd client
-          yarn ci
+          yarn install
           yarn run build
