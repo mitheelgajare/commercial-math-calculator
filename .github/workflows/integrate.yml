@@ -2,7 +2,7 @@ name: Continuous Integration
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   check_pull_request:
@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 14
       - name: Install dependencies
-        working-directory: ./client
         run: |
-        npm ci
-        npm run build
+          cd client
+          npm ci
+          npm run build
