@@ -2,12 +2,14 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "test": "jest"
   },
   "dependencies": {
     "next": "11.1.0",
@@ -18,6 +20,7 @@
     "@types/react": "17.0.27",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "jest": "^27.3.1",
     "typescript": "4.4.3"
   }
 }
