@@ -15,5 +15,5 @@ jobs:
       - name: Install dependencies
         run: |
           cd client
-          npm ci
-          npm run build
+          yarn ci
+          yarn run build
