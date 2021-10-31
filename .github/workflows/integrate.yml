@@ -14,5 +14,6 @@ jobs:
           node-version: 14
       - name: Install dependencies
         working-directory: ./client
-        run: npm ci
-        run: npm run build
+        run: |
+        npm ci
+        npm run build
