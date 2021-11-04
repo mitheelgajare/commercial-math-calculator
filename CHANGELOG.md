@@ -1,4 +1,13 @@
-# 0.1.0 (2021-11-01)
+## [0.1.1](https://github.com/mitheelgajare/commercial-math-calculator/compare/v0.1.0...v0.1.1) (2021-11-04)
+
+
+### Bug Fixes
+
+* Upgraded nextJs to v12.0.2 ([424c57e](https://github.com/mitheelgajare/commercial-math-calculator/commit/424c57e7b73b8bf6679aa83e046f383e20fa479f))
+
+
+
+# [0.1.0](https://github.com/mitheelgajare/commercial-math-calculator/compare/eaeca989304d7a7d0ece16fa9798d3402ea7b541...v0.1.0) (2021-11-01)
 
 
 ### Bug Fixes
