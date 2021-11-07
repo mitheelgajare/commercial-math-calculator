@@ -35,9 +35,13 @@
 
     .output {
       color: $primary-color;
-      max-width: 25vw;
+      max-width:fit-content;
       margin: 1rem auto;
       border: 3px solid $primary-color;
+
+      span {
+        margin: 1rem;
+      }
     }
   }
 }

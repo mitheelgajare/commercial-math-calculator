@@ -64,7 +64,7 @@ const Index: NextPage = () => {
 
   return (
     <div className="index-page">
-      {/* Part Two */}
+      {/* Part One */}
       <Head>
         <title>CMC - Home</title>
       </Head>
@@ -90,13 +90,13 @@ const Index: NextPage = () => {
           <div className="output">
             {profitOrLoss >= 0 ? (
               <React.Fragment>
-                <span>Profit: {profitOrLoss}</span> <br />
-                <span>Profit %: {profitOrLossPercent}</span>
+                <span>Profit: {profitOrLoss.toFixed(2)}</span> <br />
+                <span>Profit %: {profitOrLossPercent.toFixed(2)}</span>
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <span>Loss: {profitOrLoss * -1}</span> <br />
-                <span>Loss%: {profitOrLossPercent}</span>
+                <span>Loss: {(profitOrLoss * -1).toFixed(2)}</span> <br />
+                <span>Loss%: {profitOrLossPercent.toFixed(2)}</span>
               </React.Fragment>
             )}{" "}
           </div>
@@ -125,8 +125,8 @@ const Index: NextPage = () => {
             onChange={e => setDiscount(parseFloat(e.target.value))}
           />
           <div className="output">
-            <span>Discount %: {discountPercent}</span> <br />
-            <span>Price After Discount: {priceAfterDiscount}</span>
+            <span>Discount %: {discountPercent.toFixed(2)}</span> <br />
+            <span>Price After Discount: {priceAfterDiscount.toFixed(2)}</span>
           </div>
         </form>
       </div>
@@ -149,8 +149,8 @@ const Index: NextPage = () => {
             onChange={e => setGstPercent(parseFloat(e.target.value))}
           />
           <div className="output">
-            <span>GST: {gst}</span> <br />
-            <span>Price After GST: {priceAfterGst}</span>
+            <span>GST: {gst.toFixed(2)}</span> <br />
+            <span>Price After GST: {priceAfterGst.toFixed(2)}</span>
           </div>
         </form>
       </div>
