@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/mitheelgajare/commercial-math-calculator/compare/v0.1.2...v0.2.0) (2021-11-07)
+
+
+### Features
+
+* Included out folder for Continuous deployment ([be76ea8](https://github.com/mitheelgajare/commercial-math-calculator/commit/be76ea836ee745c08b59b6925a47190541f4bc63))
+
+
+
 ## [0.1.2](https://github.com/mitheelgajare/commercial-math-calculator/compare/v0.1.1...v0.1.2) (2021-11-07)
 
 
