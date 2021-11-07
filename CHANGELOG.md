@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/mitheelgajare/commercial-math-calculator/compare/v0.1.1...v0.1.2) (2021-11-07)
+
+
+### Bug Fixes
+
+* for issue [#8](https://github.com/mitheelgajare/commercial-math-calculator/issues/8) ([f5791d0](https://github.com/mitheelgajare/commercial-math-calculator/commit/f5791d0bf4f28782da9a1e1555e18ddd5e900c5f))
+
+
+
 ## [0.1.1](https://github.com/mitheelgajare/commercial-math-calculator/compare/v0.1.0...v0.1.1) (2021-11-04)
 
 
