@@ -108,9 +108,15 @@ body {
 
 .index-page .common .output {
   color: #4287f5;
-  max-width: 25vw;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   margin: 1rem auto;
   border: 3px solid #4287f5;
+}
+
+.index-page .common .output span {
+  margin: 1rem;
 }
 
 .about-page {
